@@ -22,16 +22,12 @@ app.use(cors());
 db.on("error", console.error.bind(console, "MongoDB connection error: "));
 
 app.get("/", (req, res) => {
-  res.send("placeholder");
+  res.send("Connected to ");
 });
-
-app.get("/read", (req, res) => {
-
-})
 
 app.use("/api/genre", genreRouter);
 app.use("/api/task", taskRouter);
 
 app.listen(port, () => {
-  console.log(`Server started on http://localhost:${port}`);
+  console.log(`Server started on port: ${port}`);
 });
