@@ -33,7 +33,7 @@ createTask = (req, res) => {
       console.log(error)
       return res.status(400).json({
         error,
-        message: "Task not created!",
+        message: error,
       });
     });
 };
