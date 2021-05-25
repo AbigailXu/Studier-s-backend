@@ -8,4 +8,4 @@ const Genre = new Schema(
     { timestamps: true },
 )
 
-module.exports = mongoose.model('genre', Genre)
+module.exports = mongoose.model('genres', Genre)

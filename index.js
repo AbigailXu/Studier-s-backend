@@ -25,6 +25,10 @@ app.get("/", (req, res) => {
   res.send("placeholder");
 });
 
+app.get("/read", (req, res) => {
+  
+})
+
 app.use("/api/genre", genreRouter);
 app.use("/api/task", taskRouter);
 
