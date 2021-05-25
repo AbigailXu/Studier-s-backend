@@ -5,7 +5,7 @@ require('dotenv').config();
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT;
 
 // MongoDB
 const db = require("./db");
@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/read", (req, res) => {
-  
+
 })
 
 app.use("/api/genre", genreRouter);
