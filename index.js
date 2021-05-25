@@ -22,7 +22,7 @@ app.use(cors());
 db.on("error", console.error.bind(console, "MongoDB connection error: "));
 
 app.get("/", (req, res) => {
-  res.send("Connected to ");
+  res.send("Connected to server.");
 });
 
 app.use("/api/genre", genreRouter);
